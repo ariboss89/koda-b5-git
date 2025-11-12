@@ -1,6 +1,3 @@
-Merupakan file yang ditulis menggunakan bahasa md (mark down)
-mark down adalah penulisan doc di dalam web
-
 # PRAKTEK GIT
 
 ## Inisialisasi GIT
@@ -11,7 +8,7 @@ $ git init
 
 ## Interim Changing (Staging)
 
-Menyimpan perubahan sementara dari working directory ke dalam staging area
+Saving the interim changes from working directory to staging area
 
 ```bash
 $ git add <...dir_file>
@@ -25,4 +22,52 @@ Save all staging into permanent, commit message based on [conventional commit] (
 ```bash
 $ git commit
 $ git commit -m "<commit-name>"
+```
+
+## Working Directory Checking Status
+
+Can be used to show status whether its in staging area or not
+
+```bash
+$ git status
+```
+
+Can be used to show the history of commit
+
+```bash
+$ git log
+```
+
+## Git Remote Management
+
+Can be used to connect between git from local computer to git that is available on the git service system (github, gitlab, dll.)
+
+```bash
+$ git remote add <remote-alias> <repository link>
+```
+
+Can be used to see remote list
+
+```
+$ git remote [-v]
+```
+
+Can be used to see remote alias
+
+```
+$ git remote get-url <remote_alias>
+```
+
+## Synchronization
+
+Can be used for synchronize from local to remote
+
+```bash
+$git push [-u] <tujuan_remote> <branch_source>
+```
+
+Can be used for synchronize from remote to local
+
+```bash
+$git pull <target_remote> <branch_remote>
 ```
