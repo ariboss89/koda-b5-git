@@ -48,13 +48,13 @@ $ git remote add <remote-alias> <repository link>
 
 Can be used to see remote list
 
-```
+```bash
 $ git remote [-v]
 ```
 
 Can be used to see remote alias
 
-```
+```bash
 $ git remote get-url <remote_alias>
 ```
 
@@ -63,11 +63,19 @@ $ git remote get-url <remote_alias>
 Can be used for synchronize from local to remote
 
 ```bash
-$git push [-u] <tujuan_remote> <branch_source>
+$ git push [-u] <tujuan_remote> <branch_source>
 ```
 
 Can be used for synchronize from remote to local
 
 ```bash
-$git pull <target_remote> <branch_remote>
+$ git pull <target_remote> <branch_remote>
+```
+
+## Copy Remote Repository to Local Computer
+
+Can be used to clone remote repository
+
+```bash
+$ git clone <link_remote> [<custom_name>]
 ```
