@@ -20,7 +20,7 @@ $ git add >...dir_folder>
 
 ## Permanent Changing (commit)
 
-Menyimpan seluruh staging menjadi permanen
+Save all staging into permanent, commit message based on [conventional commit] (https://www.conventionalcommits.org/en/v1.0.0/), for the type of commit can be refers to (https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type)
 
 ```bash
 $ git commit
