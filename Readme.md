@@ -38,6 +38,12 @@ Can be used to show the history of commit
 $ git log
 ```
 
+Can be used to show the history of commit in private version
+
+```bash
+$ git reflog
+```
+
 ## Git Remote Management
 
 Can be used to connect between git from local computer to git that is available on the git service system (github, gitlab, dll.)
@@ -78,4 +84,18 @@ Can be used to clone remote repository
 
 ```bash
 $ git clone <link_remote> [<custom_name>]
+```
+
+## Undoing Changes
+
+Concept revert time for specific <span style="background-color:yellow; color:black"> **_id_commit_** </span> to change history of git then <span style="background-color:yellow; color:black"> **_id_commit_** </span> becomes to the new **_HEAD_**
+
+```bash
+$ git reset <id_commit>
+```
+
+Concept that dissipate history with specific <span style="background-color:yellow; color:black"> **_id_commit_** </span>, but the history still written
+
+```bash
+$ git revet <id_commit>
 ```
